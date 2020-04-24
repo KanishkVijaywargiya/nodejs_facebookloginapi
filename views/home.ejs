@@ -1,0 +1,6 @@
+<!-- IF THE USER IS LOGGED IN OR NOT CHECKING -->
+
+<% if(!user) {%>
+<p>Welcome to my page. Please <a href="/login"> Login</a></p>
+<%} else{%>
+<p>Hello <%= user.username %>. View your <a href="/profile">Profile here</a></p><% } %>
